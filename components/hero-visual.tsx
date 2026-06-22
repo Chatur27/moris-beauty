@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Pause, Play, Sparkles } from "lucide-react";
 import { useReducedMotion } from "motion/react";
 import { Component, useCallback, useEffect, useRef, useState, type ReactNode } from "react";
+import { withBasePath } from "@/lib/site-path";
 
 const HeroScene = dynamic(() => import("@/components/hero-scene"), {
   ssr: false,
@@ -16,7 +17,7 @@ function StaticHeroProduct() {
     <div className="hero-static-product" aria-hidden="true">
       <div className="hero-static-card" />
       <Image
-        src="/rivage-glow-bottle.png"
+        src={withBasePath("/rivage-glow-bottle.png")}
         alt=""
         width={1040}
         height={1440}

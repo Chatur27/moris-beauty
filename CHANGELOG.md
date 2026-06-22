@@ -1,6 +1,17 @@
 # Changelog
 
 
+## v2.2.0 — GitHub Pages Deployment
+
+- added Next.js static export with trailing-slash routes
+- added automatic base-path handling for project and root GitHub Pages sites
+- added a GitHub Actions build-and-deploy workflow
+- converted the shop category query handling to a static-export-safe client boundary
+- added base-path-safe 3D and fallback product assets
+- added local static preview and export verification scripts
+- added a dedicated GitHub Pages deployment guide
+
+
 ## v2.1.3 — Hero Performance + Label Refinement
 
 - reduced homepage scroll jank by pausing the 3D hero animation while the user is actively scrolling

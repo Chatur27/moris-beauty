@@ -4,7 +4,7 @@ Validated on **22 June 2026** using Node.js 22.16.0 and npm 10.9.2.
 
 ## Release
 
-`moris-beauty-3d-storefront` **v2.1.2 — Stability & Spacing Refinement**
+`moris-beauty-3d-storefront` **v2.2.0 — GitHub Pages Deployment**
 
 ## Passed checks
 
@@ -46,3 +46,10 @@ npm audit --omit=dev     PASS — 0 vulnerabilities
 ## Boundary
 
 This validation confirms installation, TypeScript, linting, production compilation, route generation, dependency status and source-level regression controls. It does not claim production payment, authentication, database, inventory, formal security assessment or client deployment readiness.
+
+## GitHub Pages validation
+
+- Static export generates an `out/` directory.
+- Project-site build verified with `/moris-beauty` base path.
+- Root-site build verified with no base path.
+- GitHub Pages workflow validates TypeScript, ESLint and the export before deployment.

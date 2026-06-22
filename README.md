@@ -8,7 +8,7 @@ Moris Beauty demonstrates how a storefront can combine a selective 3D product ex
 
 ## Preview
 
-The gallery below reflects the compact v2.1 visual direction; v2.1.2 keeps that art direction while refining spacing and interaction reliability.
+The gallery below reflects the compact v2.1 visual direction; v2.2.0 keeps that art direction while adding static-export and GitHub Pages deployment support.
 
 
 | 3D hero | Compact commerce section |
@@ -35,18 +35,18 @@ The gallery below reflects the compact v2.1 visual direction; v2.1.2 keeps that 
 - Persistent local cart with quantity and fulfilment controls
 - Three-step Beauty Finder with transparent recommendation rules
 - Public-safe WhatsApp share and advice flows
-- GitHub Actions quality workflow and PowerShell publication helper
+- GitHub Actions quality workflow, static export and automated GitHub Pages deployment
 
-## v2.1.2 — Stability & Spacing Refinement
+## v2.2.0 — GitHub Pages Deployment
 
-This release keeps the compact four-stage homepage and focuses on reliability and finish:
+This release preserves the validated v2.1.3 interface and adds a complete static-hosting pipeline:
 
-1. fixes direct category navigation between Shop, Skincare, Makeup and Fragrance;
-2. removes the apparent small-to-large 3D zoom on cold homepage loads;
-3. restores correct badge and wishlist positioning on product cards;
-4. reduces unnecessary blank space across all primary routes without making the interface cramped.
-
-The category tabs now also keep the URL in sync, which improves refresh, browser-history and direct-link behaviour.
+1. exports every route to the `out/` directory;
+2. deploys automatically through GitHub Actions;
+3. supports both project URLs and root `.github.io` sites;
+4. resolves public assets correctly when the site is hosted under a repository sub-path;
+5. keeps category query links functional on the static `/shop/` route;
+6. includes a local static-preview server and deployment guide.
 
 ## Technology
 
@@ -99,12 +99,14 @@ npm run dev
 
 Open `http://localhost:3000`.
 
-### Production mode
+### Static production preview
 
 ```bash
 npm run build
-npm run start
+npm run preview
 ```
+
+The exported site is written to `out/`.
 
 ### Quality checks
 
@@ -126,6 +128,25 @@ NEXT_PUBLIC_SITE_URL=https://your-deployment.example
 ```
 
 Never commit real secrets or payment credentials.
+
+## Deploy to GitHub Pages
+
+The repository includes `.github/workflows/deploy-pages.yml`. After pushing to a public GitHub repository:
+
+1. open **Settings → Pages**;
+2. select **GitHub Actions** under Build and deployment;
+3. open the **Actions** tab and run or wait for `Deploy to GitHub Pages`;
+4. use the deployment URL shown by the completed workflow.
+
+For a repository named `moris-beauty` under `Chatur27`, the expected URL is:
+
+```text
+https://chatur27.github.io/moris-beauty/
+```
+
+For a root address such as `https://moris-beauty.github.io/`, the repository must belong to a GitHub user or organisation named `moris-beauty` and be named `moris-beauty.github.io`.
+
+See [GitHub Pages deployment](docs/GITHUB_PAGES.md) for the complete setup.
 
 ## Deploy to Vercel
 

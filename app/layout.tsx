@@ -5,11 +5,14 @@ import { SiteHeader } from "@/components/site-header";
 import { CartDrawer } from "@/components/cart-drawer";
 import { SiteFooter } from "@/components/site-footer";
 import { MotionProvider } from "@/components/motion-provider";
+import { withBasePath } from "@/lib/site-path";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const siteOrigin = new URL(siteUrl).origin;
+const socialImage = new URL(withBasePath("/og-cover.svg"), siteOrigin).toString();
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(siteOrigin),
   title: {
     default: "Moris Beauty — Beauty made simple",
     template: "%s | Moris Beauty",
@@ -27,11 +30,11 @@ export const metadata: Metadata = {
     title: "Moris Beauty — Beauty made simple",
     description:
       "A premium, mobile-first Mauritian beauty storefront with selective 3D.",
-    images: ["/og-cover.svg"],
+    images: [socialImage],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og-cover.svg"],
+    images: [socialImage],
   },
 };
 

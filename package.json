@@ -1,14 +1,17 @@
 {
   "name": "moris-beauty-3d-storefront",
-  "version": "2.1.3",
+  "version": "2.2.0",
   "private": true,
   "description": "A compact, mobile-first Mauritian beauty commerce portfolio with an interactive 3D hero and reduced-scroll shopping experience.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node scripts/serve-static.mjs",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "preview": "node scripts/serve-static.mjs",
+    "check:export": "node scripts/check-static-export.mjs",
+    "check:registry": "node scripts/check-public-registry.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",

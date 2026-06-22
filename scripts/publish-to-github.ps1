@@ -2,7 +2,7 @@ param(
   [Parameter(Mandatory = $true)]
   [string]$GitHubUsername,
 
-  [string]$RepositoryName = "moris-beauty-3d-storefront",
+  [string]$RepositoryName = "moris-beauty",
 
   [switch]$CreateWithGitHubCli
 )
@@ -33,14 +33,14 @@ if (-not (Test-Path ".git")) {
 git add .
 $stagedChanges = git diff --cached --name-only
 if ($stagedChanges) {
-  git commit -m "feat: publish Moris Beauty storefront v1.0.2"
+  git commit -m "feat: publish Moris Beauty storefront v2.2.0"
 } else {
   Write-Host "No uncommitted files to commit."
 }
 
 git branch -M main
 
-Write-Host "[6/6] Publishing instructions"
+Write-Host "[6/6] Publishing repository"
 if ($CreateWithGitHubCli) {
   gh auth status
   $existingRemote = git remote get-url origin 2>$null
@@ -54,10 +54,14 @@ if ($CreateWithGitHubCli) {
       --push `
       --description "Premium mobile-first Mauritian beauty storefront with Next.js and selective 3D."
   }
+
+  Write-Host ""
+  Write-Host "Repository pushed. In GitHub, open Settings -> Pages and select GitHub Actions."
 } else {
   Write-Host ""
   Write-Host "Local repository is validated and ready."
   Write-Host "Create a PUBLIC empty GitHub repository named '$RepositoryName', then run:"
   Write-Host "git remote add origin https://github.com/$GitHubUsername/$RepositoryName.git"
   Write-Host "git push -u origin main"
+  Write-Host "Then open Settings -> Pages and select GitHub Actions."
 }

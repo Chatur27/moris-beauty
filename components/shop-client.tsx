@@ -1,7 +1,7 @@
 "use client";
 
 import { Search, SlidersHorizontal, X } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import { ProductCard } from "@/components/product-card";
 import { products, type ProductCategory } from "@/data/products";
@@ -14,18 +14,20 @@ const categories: Array<"All" | ProductCategory> = [
   "Nails",
 ];
 
-export function ShopClient({
-  initialCategory,
-}: {
-  initialCategory: "All" | ProductCategory;
-}) {
+export function ShopClient() {
   const router = useRouter();
-  const [category, setCategory] = useState<"All" | ProductCategory>(initialCategory);
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams.get("category");
+  const category: "All" | ProductCategory = categories.includes(
+    categoryParam as "All" | ProductCategory,
+  )
+    ? (categoryParam as "All" | ProductCategory)
+    : "All";
+
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("featured");
 
   function selectCategory(nextCategory: "All" | ProductCategory) {
-    setCategory(nextCategory);
     router.replace(
       nextCategory === "All"
         ? "/shop"

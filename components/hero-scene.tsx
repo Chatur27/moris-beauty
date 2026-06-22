@@ -4,8 +4,11 @@ import { ContactShadows, Float, RoundedBox, useTexture } from "@react-three/drei
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Suspense, useEffect, useMemo, useRef } from "react";
 import { MathUtils, SRGBColorSpace, type Group } from "three";
+import { withBasePath } from "@/lib/site-path";
 
-useTexture.preload("/rivage-glow-bottle.png");
+const heroTexturePath = withBasePath("/rivage-glow-bottle.png");
+
+useTexture.preload(heroTexturePath);
 
 function CanvasHealth({
   onContextLost,
@@ -67,7 +70,7 @@ function ReadySignal({ onReady }: { onReady: () => void }) {
 }
 function ProductStage({ animate }: { animate: boolean }) {
   const group = useRef<Group>(null);
-  const texture = useTexture("/rivage-glow-bottle.png");
+  const texture = useTexture(heroTexturePath);
   const displayTexture = useMemo(() => {
     const clonedTexture = texture.clone();
     clonedTexture.colorSpace = SRGBColorSpace;
