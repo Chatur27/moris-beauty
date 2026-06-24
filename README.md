@@ -1,5 +1,26 @@
 # Moris Beauty — Compact 3D Storefront
 
+## Live demonstration
+
+**Moris Beauty is live on Vercel:**
+
+https://moris-beauty.vercel.app/
+
+Moris Beauty is an original, mobile-first Mauritian beauty-commerce portfolio concept built with Next.js, TypeScript and React Three Fiber.
+
+### Highlights
+
+* Interactive 3D product presentation
+* Responsive beauty catalogue
+* Product detail pages
+* Persistent shopping cart
+* Beauty Finder recommendation flow
+* Mauritius delivery and click-and-collect concepts
+* Reduced-motion and WebGL fallbacks
+* Performance-aware 3D rendering
+
+> Moris Beauty is a fictional portfolio project. It is not affiliated with any existing beauty retailer.
+
 A premium, mobile-first beauty-commerce portfolio concept designed for the Mauritian market with **Next.js, TypeScript, React Three Fiber, original product visuals and accessible motion**.
 
 Moris Beauty demonstrates how a storefront can combine a selective 3D product experience with familiar, fast shopping flows. The homepage has been deliberately compressed into four high-value stages so visitors can understand the concept without excessive scrolling.
