@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[64330,["/moris-beauty/_next/static/chunks/3y882q7w9vwro.js","/moris-beauty/_next/static/chunks/1na1fii28n4l4.js","/moris-beauty/_next/static/chunks/14mrh2-p_w84d.js","/moris-beauty/_next/static/chunks/1kffkgqs1kbp1.js"],"BeautyFinderClient"]
+3:I[97367,["/moris-beauty/_next/static/chunks/3y882q7w9vwro.js","/moris-beauty/_next/static/chunks/1na1fii28n4l4.js","/moris-beauty/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/moris-beauty/_next/static/chunks/1kffkgqs1kbp1.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"wgPrlBwDWOfYVnyqLUmde"}
+5:null

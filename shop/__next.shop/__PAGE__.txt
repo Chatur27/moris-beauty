@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:"$Sreact.suspense"
+3:I[9907,["/moris-beauty/_next/static/chunks/3y882q7w9vwro.js","/moris-beauty/_next/static/chunks/1na1fii28n4l4.js","/moris-beauty/_next/static/chunks/14mrh2-p_w84d.js","/moris-beauty/_next/static/chunks/2fu-_-znmjb_g.js"],"ShopClient"]
+4:I[97367,["/moris-beauty/_next/static/chunks/3y882q7w9vwro.js","/moris-beauty/_next/static/chunks/1na1fii28n4l4.js","/moris-beauty/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+0:{"rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","div",null,{"className":"shop-page","aria-hidden":"true"}],"children":["$","$L3",null,{}]}],[["$","script","script-0",{"src":"/moris-beauty/_next/static/chunks/2fu-_-znmjb_g.js","async":true}]],["$","$L4",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"wgPrlBwDWOfYVnyqLUmde"}
+5:null

@@ -1,0 +1,32 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1110" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6EFE5"/>
+      <stop offset="0.52" stop-color="#D8906E"/>
+      <stop offset="1" stop-color="#6D3D31"/>
+    </linearGradient>
+    <linearGradient id="bottle" x1="690" y1="170" x2="905" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1B18C"/>
+      <stop offset="0.5" stop-color="#C96E50"/>
+      <stop offset="1" stop-color="#9B4F3B"/>
+    </linearGradient>
+    <filter id="shadow" x="560" y="80" width="470" height="510" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="28" stdDeviation="24" flood-color="#3A1C14" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" rx="40" fill="url(#bg)"/>
+  <circle cx="1015" cy="102" r="190" stroke="white" stroke-opacity="0.28"/>
+  <circle cx="1030" cy="520" r="250" stroke="#2B1712" stroke-opacity="0.12"/>
+  <text x="88" y="120" fill="#171412" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="6">MORIS BEAUTY</text>
+  <text x="84" y="266" fill="#171412" font-family="Georgia, serif" font-size="104">Beauty made</text>
+  <text x="84" y="368" fill="#FFF4E8" font-family="Georgia, serif" font-size="112" font-style="italic">simple.</text>
+  <text x="91" y="435" fill="#36241E" font-family="Arial, sans-serif" font-size="23">A mobile-first Mauritius beauty-commerce concept</text>
+  <g filter="url(#shadow)" transform="rotate(-5 820 335)">
+    <rect x="758" y="110" width="118" height="92" rx="23" fill="#171412"/>
+    <rect x="690" y="190" width="255" height="350" rx="58" fill="url(#bottle)"/>
+    <rect x="732" y="298" width="171" height="122" fill="#F7E9D5"/>
+    <text x="817" y="334" text-anchor="middle" fill="#171412" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">MORIS</text>
+    <text x="817" y="376" text-anchor="middle" fill="#171412" font-family="Georgia, serif" font-size="31">Rivage</text>
+    <text x="817" y="400" text-anchor="middle" fill="#171412" font-family="Arial, sans-serif" font-size="9" letter-spacing="2">GLOW SERUM</text>
+  </g>
+</svg>

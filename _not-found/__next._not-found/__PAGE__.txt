@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[22016,["/moris-beauty/_next/static/chunks/3y882q7w9vwro.js","/moris-beauty/_next/static/chunks/1na1fii28n4l4.js","/moris-beauty/_next/static/chunks/14mrh2-p_w84d.js"],""]
+3:I[97367,["/moris-beauty/_next/static/chunks/3y882q7w9vwro.js","/moris-beauty/_next/static/chunks/1na1fii28n4l4.js","/moris-beauty/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"not-found","children":[["$","span",null,{"className":"eyebrow","children":"404"}],["$","h1",null,{"children":"This beauty shelf is empty."}],["$","p",null,{"children":"The page you requested does not exist in this portfolio demo."}],["$","$L2",null,{"className":"button button-dark","href":"/shop","children":"Return to the shop"}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"wgPrlBwDWOfYVnyqLUmde"}
+5:null

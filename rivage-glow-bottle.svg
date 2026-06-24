@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="1440" viewBox="0 0 520 720">
+  <defs>
+    <linearGradient id="glass" x1="0" x2="1">
+      <stop offset="0" stop-color="#9b4938"/>
+      <stop offset="0.18" stop-color="#dc7d5d"/>
+      <stop offset="0.48" stop-color="#f1ae84"/>
+      <stop offset="0.72" stop-color="#d67959"/>
+      <stop offset="1" stop-color="#8b3f31"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" x2="1">
+      <stop offset="0" stop-color="#0e0d0c"/>
+      <stop offset="0.5" stop-color="#51443e"/>
+      <stop offset="1" stop-color="#11100f"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" x2="1">
+      <stop offset="0" stop-color="#9d7b4f"/>
+      <stop offset="0.5" stop-color="#efd5a8"/>
+      <stop offset="1" stop-color="#89653d"/>
+    </linearGradient>
+    <radialGradient id="highlight" cx="0.4" cy="0.18" r="0.75">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.62"/>
+      <stop offset="0.3" stop-color="#fff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="220%">
+      <feDropShadow dx="0" dy="34" stdDeviation="26" flood-color="#2a100b" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <ellipse cx="260" cy="655" rx="148" ry="26" fill="#3f1c13" opacity="0.22"/>
+  <g filter="url(#shadow)">
+    <rect x="190" y="63" width="140" height="126" rx="28" fill="url(#cap)"/>
+    <rect x="174" y="38" width="172" height="54" rx="24" fill="url(#metal)"/>
+    <rect x="215" y="173" width="90" height="54" rx="18" fill="#f0dfca"/>
+    <path d="M145 245 Q145 205 190 198 H330 Q375 205 375 245 V572 Q375 622 326 636 H194 Q145 622 145 572 Z" fill="url(#glass)"/>
+    <path d="M164 260 Q176 224 214 218 H250 V614 H194 Q164 603 164 569 Z" fill="url(#highlight)" opacity="0.65"/>
+    <path d="M342 244 Q358 273 356 322 V548 Q356 593 326 607" fill="none" stroke="#5b241b" stroke-opacity="0.28" stroke-width="12" stroke-linecap="round"/>
+    <rect x="160" y="332" width="200" height="188" rx="22" fill="#f7efe5"/>
+    <rect x="173" y="345" width="174" height="162" rx="16" fill="none" stroke="#2a211d" stroke-opacity="0.1"/>
+    <text x="260" y="380" text-anchor="middle" fill="#544943" font-family="Arial, sans-serif" font-size="14" letter-spacing="2.2">MORIS BEAUTY</text>
+    <text x="260" y="426" text-anchor="middle" fill="#191513" font-family="Georgia, serif" font-size="28">Rivage Glow</text>
+    <line x1="198" x2="322" y1="444" y2="444" stroke="#2b211d" stroke-opacity="0.22"/>
+    <text x="260" y="470" text-anchor="middle" fill="#6b5e57" font-family="Arial, sans-serif" font-size="9" letter-spacing="1.15">NIACINAMIDE · MARINE MINERALS</text>
+    <text x="260" y="490" text-anchor="middle" fill="#8b7c74" font-family="Arial, sans-serif" font-size="8.5">30 ml · 1.0 fl oz</text>
+  </g>
+</svg>
